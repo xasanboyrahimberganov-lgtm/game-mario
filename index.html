@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мини-Марио</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>МИНИ-МАРИО</h1>
+
+    <div class="hud">
+      <div class="hud-item">Очки: <span id="score">0</span></div>
+      <div class="hud-item">Монеты: <span id="coins">0</span></div>
+      <div class="hud-item">Жизни: <span id="lives">3</span></div>
+      <div class="hud-item">Рекорд: <span id="highscore">0</span></div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="game" width="900" height="500"></canvas>
+
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">Игра окончена</h2>
+        <p id="overlay-text">Ваш счёт: 0</p>
+        <button id="restart">Играть снова</button>
+      </div>
+    </div>
+
+    <div class="hint">
+      <kbd>←</kbd> <kbd>→</kbd> или <kbd>A</kbd> <kbd>D</kbd> — движение &nbsp;•&nbsp;
+      <kbd>Space</kbd> / <kbd>W</kbd> / <kbd>↑</kbd> — прыжок &nbsp;•&nbsp;
+      <kbd>R</kbd> — перезапуск
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
